@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        num_likes = 0;
+        function status() {
+            var status = prompt("Make Status Update", "I'm feeling Lucky");
+            document.getElementById("display").innerText = status;
+        }
+        function likes() {
+            num_likes += 1;
+            document.getElementById("like").value = "LIKE " + num_likes;
+        }
+        function comment() {
+            content = prompt("Comment: ");
+            var commentNode = document.createTextNode(content);
+            document.getElementById("comment").add
+        }
+        function deletePost() {
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="status()" value="Make Status Update">
+    <center>
+        <p id="display">I'm feeling Lucky</p>
+        <input type="button" onclick="likes()" value="LIKE" id="like">
+        <input type="button" onclick="comment()" value="Comment" id="comment">
+        <input type="button" onclick="deletePost()" value="Delete">
+    </center>
+</body>
+
+</html>
